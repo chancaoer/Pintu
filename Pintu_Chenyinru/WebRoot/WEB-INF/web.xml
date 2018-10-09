@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Pintu_Chenyinru</display-name>
+  
+  <servlet>
+        <servlet-name>DBUtils</servlet-name>
+        
+        <servlet-class>com.ce.util.db.DBUtils</servlet-class>
+        <init-param>  
+            <param-name>DBUsername</param-name>  
+            
+            <param-value>root</param-value>  
+        </init-param>
+        <init-param>  
+            <param-name>DBPassword</param-name>
+         
+            <param-value>root</param-value>  
+        </init-param>
+        <init-param>  
+            <param-name>ConnectionURL</param-name>
+             
+            <param-value>jdbc:mysql://127.0.0.1:3306/pintu_ce?useSSL=false</param-value>  
+        </init-param>
+        <!--指示服务器在启动时立即加载这个Servlet -->
+        <load-on-startup>0</load-on-startup> 
+    </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.ce.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.ce.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>zhanjiServlet</servlet-name>
+    <servlet-class>com.ce.servlet.zhanjiServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>paimingServlet</servlet-name>
+    <servlet-class>com.ce.servlet.paimingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>saveServlet</servlet-name>
+    <servlet-class>com.ce.servlet.saveServlet</servlet-class>
+  </servlet> 
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>zhanjiServlet</servlet-name>
+    <url-pattern>/zhanjiServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>paimingServlet</servlet-name>
+    <url-pattern>/paimingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>saveServlet</servlet-name>
+    <url-pattern>/saveServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
