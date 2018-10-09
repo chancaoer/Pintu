@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wanjiabeijing">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/wanjia" />
+
+    <ImageButton
+        android:id="@+id/model_wanjia_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="164dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/login" />
+
+    <ImageButton
+        android:id="@+id/model_wanjia_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="185dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/register" />
+
+    <ImageButton
+        android:id="@+id/model_wanjia_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:src="@drawable/pintuname" />
+
+</RelativeLayout>

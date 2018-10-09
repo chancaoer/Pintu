@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/registerbeijing">
+
+    <EditText
+        android:id="@+id/register_id"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:hint="请输入您的账号"
+        android:textColorHint="#e46695"/>
+
+    <EditText
+        android:id="@+id/register_psd"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:hint="请输入您的密码"
+        android:inputType="textPassword"
+        android:textColorHint="#e46695"/>
+
+    <EditText
+        android:id="@+id/confirm_psd"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="209dp"
+        android:hint="请再次输入您的密码"
+        android:inputType="textPassword"
+        android:textColorHint="#e46695"/>
+
+    <ImageButton
+        android:id="@+id/register_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="195dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/register" />
+
+    <TextView
+        android:id="@+id/goto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/register_id"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="161dp"
+        android:text="已有账号？点此登录"
+        android:textColor="#9a203f"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/register_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:src="@drawable/pintuname" />
+
+</RelativeLayout>

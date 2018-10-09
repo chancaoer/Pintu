@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paimingbeijing">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="排名按游戏时间先后"
+        android:textSize="22sp"
+        android:textColor="#161670"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/paimingbiaotou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="排名"
+            android:textColor="#2e2e8d"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="玩家账号"
+            android:textColor="#2e2e8d"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="最高闯关数"
+            android:textColor="#2e2e8d"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/paiminglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paimingbiaotou"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp">
+
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/paiming_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:src="@drawable/pintuname"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+</RelativeLayout>

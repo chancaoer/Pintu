@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbeijing">
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_psd"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-93dp"
+        android:layout_marginStart="49dp"
+        android:hint="请输入您的账号"
+        android:textColorHint="#555054" />
+
+    <EditText
+        android:id="@+id/login_psd"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/login_id"
+        android:layout_marginTop="115dp"
+        android:hint="请输入您的密码"
+        android:inputType="textPassword"
+        android:textColorHint="#555054" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/login_id"
+        android:layout_marginTop="177dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/remenber_psd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/login_id"
+            android:layout_below="@+id/login_psd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/login_id"
+        android:layout_marginTop="223dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="252dp">
+
+        <CheckBox
+            android:id="@+id/auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/login_id"
+            android:layout_below="@+id/login_psd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动登录"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="189dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/login"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <TextView
+        android:id="@+id/goto_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_id"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="151dp"
+        android:text="未有账号？点此注册"
+        android:textColor="#9a203f"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/login_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        android:src="@drawable/pintuname"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+</RelativeLayout>
